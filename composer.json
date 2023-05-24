@@ -1,0 +1,22 @@
+{
+    "name": "tkachikov/packages",
+    "autoload": {
+        "psr-4": {
+            "Tkachikov\\Packages\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ткачиков Александр",
+            "email": "a.tkachikov@mail.ru"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Tkachikov\\Packages\\Providers\\PackagesServiceProvider"
+            ]
+        }
+    }
+}
