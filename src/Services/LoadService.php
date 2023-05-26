@@ -59,9 +59,7 @@ class LoadService
                 $this->setMessageProgressBar($package->fullName);
                 $data = $this->getData($url.$package->fullName.'.json');
                 $lastVersion = $data['packages'][$package->fullName][0] ?? [];
-                if ($lastVersion) {
-                    $package->update(['info' => $lastVersion]);
-                }
+                $package->update(['info' => $lastVersion]);
                 $this->advanceProgressBar();
             });
         $this->finishProgressBar();
